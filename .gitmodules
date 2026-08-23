@@ -1,0 +1,3 @@
+[submodule "models/r200"]
+	path = models/r200
+	url = git@github.com:reshafim-robotics/r200.git
