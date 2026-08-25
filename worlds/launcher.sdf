@@ -75,5 +75,16 @@
         </collision>
       </link>
     </model>
+    <model name="target_0">
+      <include>
+        <uri>model://x500</uri>
+        <!-- target_0 is teleported externally by gz_target_teleport at
+             update_rate_hz (30 Hz default), well below the 250 Hz physics
+             rate above; without this, gravity free-falls the dynamic x500
+             body between corrections and it visibly jitters/snaps back. -->
+        <static>true</static>
+        <scale>4 4 4</scale>
+      </include>
+    </model>
   </world>
 </sdf>
